@@ -7,6 +7,8 @@ import HomePage from './pages/homepage/homepage.component';
 import ShoPage from './pages/shoppage/shoppage.component';
 import ShopPage from './pages/shoppage/shoppage.component';
 
+import Header from './components/header/header.component';
+
 
 const HatsPage = () => (
     <div>
@@ -19,6 +21,7 @@ const HatsPage = () => (
 function App() {
   return (
     <div>
+      <Header />
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route path='/shop/hats' component={HatsPage} />
